@@ -6,6 +6,7 @@
   "scripts": {
     "start": "nodemon src/index.js",
     "dev": "nodemon src/index.js",
+    "start-mongo": "docker run -p 27017:27017 -v ~/data:/data/db mongo",
     "final": "nodemon final/index.js",
     "seed": "node final/util/seed/index.js",
     "lint": "eslint \"src/**/*.js\""
